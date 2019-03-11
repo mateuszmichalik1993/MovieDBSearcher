@@ -1,0 +1,14 @@
+<div class="page-container">
+    <div class="page-content">
+      <ng-content></ng-content>
+    </div>
+    <div class="pagination">
+      <button class="page" *ngIf="previousPageExists" (click)="goToPreviousPage()">
+        Previous page
+      </button>
+      <span>{{currentPage}}</span>
+      <button class="page" *ngIf="nextPageExists" (click)="goToNextPage()">
+        Next page
+      </button>
+    </div>
+</div>

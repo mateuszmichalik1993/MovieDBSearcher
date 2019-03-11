@@ -1,0 +1,8 @@
+.page{
+    width: 200px;
+    height: 40px;
+}
+.pagination{
+    display: flex;
+    height: 70px;
+}

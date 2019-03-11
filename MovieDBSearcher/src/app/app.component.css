@@ -1,0 +1,15 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+pagination{
+    overflow-y: scroll;
+    display: block;
+    max-height: 100%;
+}
+movies-search{
+    height: 50px;
+    padding: 10px 0 10px 0;
+    display: block;
+}
