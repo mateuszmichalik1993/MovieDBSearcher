@@ -50,7 +50,6 @@ export class MovieService {
     }
 
     private mapPage(response: MoviesPageReponse): MoviesPage {
-        debugger;
         return MoviesPageReponseMapper.mapToMoviesPage(response, this.baseImageUrl);
     }
 }

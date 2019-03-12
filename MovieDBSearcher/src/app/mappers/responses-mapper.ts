@@ -13,7 +13,7 @@ export class MovieMapper {
             originalLanguage: movie.original_language,
             overview: movie.overview,
             popularity: movie.popularity,
-            posterPath: `${baseImageUrl}w185/${movie.poster_path}`,
+            posterPath: movie.poster_path ? `${baseImageUrl}w185/${movie.poster_path}` : null,
             releaseDate: movie.release_date,
             title: movie.title,
         };
@@ -33,7 +33,7 @@ export class MoviesPageReponseMapper {
 }
 
 export class ErrorMapper {
-    static mapToErrorResponse(error:string): ErrorResponse {
+    static mapToErrorResponse(error: string): ErrorResponse {
         const errorResponse = JSON.parse(error);
         if (errorResponse.errors != null && errorResponse.errors.length > 0) {
             return errorResponse;

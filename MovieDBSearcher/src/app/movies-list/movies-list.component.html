@@ -3,6 +3,6 @@
     <span>{{movie.title}}</span>
     <span>{{movie.overview}}</span>
     <span>{{movie.popularity}}</span>
-    <img src={{movie.posterPath}}>
+    <img *ngIf="movie.posterPath" src={{movie.posterPath}}  alt="Movie">
   </div>
 </div>
